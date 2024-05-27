@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Youtube Playlist Tool</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.min.js" type="module" async defer></script>
+  </head>
+  <body>
+    <div id="userData">
+      <label for="api-key">YouTube API Key:</label>
+      <input
+        type="text"
+        id="apiKey"
+        placeholder="Enter your YouTube API key"
+      />
+      <label for="playlist-link">YouTube Playlist Link:</label>
+      <input
+        type="text"
+        id="playlistUrl"
+        placeholder="Enter the YouTube playlist link"
+      />
+    </div>
+    <div id="options">
+      <button id="all-ids" class="options">Get all video IDs</button>
+      <button id="all-times" class="options">Get all video durations</button>
+      <button id="masterPlaylist" class="options">Get Master Playlist</button>
+    </div>
+    <div id="results-container">
+      <textarea id="output" rows="20" cols="100"></textarea>
+      <div id="response-options">
+        <button id="copyText" class="response-options-btn">Copy</button>
+        <span>API Calls Made: </span><span id="apiCallCount">0</span>
+        <button id="downloadFile" class="response-options-btn">Download</button>
+      </div>
+    </div>
+  </body>
+</html>
