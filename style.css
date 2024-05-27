@@ -1,21 +1,41 @@
-html, body {
-    height: 100%;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  #userData, #options, #results-container {
-    text-align: center;
-    margin-bottom: 20px; /* Adjust as needed */
-  }
-  
-  .options {
-    margin: 10px;
-  }
-  
-  .response-options-btn {
-    margin-right: 10px;
-  }
+@import url("https://fonts.googleapis.com/css2?family=Wix+Madefor+Text:ital,wght@0,400..800;1,400..800&display=swap");
+html,
+body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #252525;
+  color: white;
+  font-family: "Wix Madefor Text", sans-serif;
+  font-optical-sizing: auto;
+}
+
+a {
+  color: white;
+  background-color: #752cc9;
+  border-radius: 40px;
+  text-decoration: none;
+  padding: 10px;
+}
+
+#userData,
+#options,
+#results-container {
+  text-align: center;
+  margin-bottom: 20px; /* Adjust as needed */
+}
+
+#output {
+  margin-bottom: 30px;
+}
+
+.options {
+  margin: 10px;
+}
+
+.response-options-btn {
+  margin-right: 10px;
+}
